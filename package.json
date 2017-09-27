@@ -1,0 +1,59 @@
+{
+  "name": "book-trading-club-backend",
+  "version": "1.0.0",
+  "description": "Back End of Book Trading Club App - A Free Code Camp Dymamic Web Application Project.",
+  "engines": {
+    "node": "6.11.x"
+  },
+  "main": "server.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=production babel-node server.js",
+    "dev": "cross-env NODE_ENV=development babel-node server.js",
+    "test": "cross-env NODE_ENV=test ./tests/config/test.sh",
+    "refresh": "rm -rf node_modules && npm cache clean && npm install",
+    "killallport": "killall -9 node",
+    "findpid": "ps -aux | grep node"
+  },
+  "keywords": [
+    "book-trading-club-app",
+    "api",
+    "server-side"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/minhkashyu/book-trading-club-backend.git"
+  },
+  "author": "minhkashyu",
+  "license": "MIT",
+  "homepage": "https://github.com/minhkashyu/book-trading-club-backend#readme",
+  "dependencies": {
+    "async": "^2.5.0",
+    "babel-cli": "^6.24.1",
+    "babel-preset-env": "^1.6.0",
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.17.1",
+    "cross-env": "^5.0.5",
+    "crypto": "^1.0.1",
+    "dotenv": "^4.0.0",
+    "express": "^4.15.2",
+    "jsonwebtoken": "^7.3.0",
+    "moment": "^2.18.1",
+    "mongoose": "^4.8.6",
+    "morgan": "^1.8.1",
+    "passport": "^0.3.2",
+    "passport-facebook": "^2.1.1",
+    "passport-github": "^1.1.0",
+    "passport-google-oauth": "^1.0.0",
+    "passport-jwt": "^2.2.1",
+    "passport-local": "^1.0.0",
+    "passport-twitter": "^1.0.4"
+  },
+  "devDependencies": {
+    "babel-core": "^6.25.0",
+    "chai": "^4.1.2",
+    "chai-http": "^3.0.0",
+    "lodash": "^4.17.4",
+    "mocha": "^3.5.0",
+    "sinon": "^3.2.0"
+  }
+}
